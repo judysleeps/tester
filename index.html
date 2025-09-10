@@ -38,7 +38,20 @@
     }
 
     .content {
-      height: 300px; /* ✅ Taller than 100px container */
+      position: relative; /* Required for absolute positioning */
+  height: 300px;
+  padding: 10px;
+  color: white;
+  overflow: hidden;
+
+      
+      .corner-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;     /* Adjust size as needed */
+  height: auto;
+}
 
 
 .skinny-rectangle::-webkit-scrollbar {
@@ -61,6 +74,11 @@
   </style>
 </head>
 <body>
+
+
+<img src="https://i.imgur.com/K2yHHqT.png" class="corner-image">
+
+  
   <div class="chubby-rectangle"></div>
 
   <div class="skinny-rectangle">
