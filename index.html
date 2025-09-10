@@ -38,20 +38,22 @@
     }
 
     .content {
-      position: relative; /* Required for absolute positioning */
-  height: 300px;
-  padding: 10px;
-  color: white;
-  overflow: hidden;
+      height: 300px;
+      padding: 10px;
+      color: white;
 
       
-      .corner-image {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100px;     /* Adjust size as needed */
-  height: auto;
-}
+        /* 👇 Corner image styles */
+    .corner-image {
+      position: fixed;        /* Fixes it to the viewport */
+      bottom: 0;
+      left: 0;
+      width: 150px;           /* Adjust size */
+      height: auto;
+      z-index: 1000;          /* Bring it to the front */
+      pointer-events: none;   /* Prevent mouse blocking (optional) */
+    }
+
 
 
 .skinny-rectangle::-webkit-scrollbar {
@@ -95,7 +97,7 @@
       Line 12<br>
 
 
-<img src="https://i.imgur.com/K2yHHqT.png" class="corner-image">
+
 
       
     </div>
@@ -103,5 +105,5 @@
 
 <img src="https://i.imgur.com/K2yHHqT.png" class="corner-image">
 
-
+</body>
 </html>
