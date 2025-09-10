@@ -25,19 +25,16 @@
       width: 800px;
       height: 100px;
       background-color: #2196F3;
-      overflow-x: auto; /* Enable horizontal scrolling */
-      overflow-y: hidden;
-      white-space: nowrap; /* Prevent content from wrapping */
+      overflow-y: auto; /* ✅ Enable vertical scrolling */
+      overflow-x: hidden;
+      padding: 10px;
+      box-sizing: border-box;
+      color: white;
+      font-family: sans-serif;
     }
 
     .content {
-      display: inline-block;
-      width: 1600px; /* Wider than container to cause scroll */
-      height: 100%;
-      background: linear-gradient(to right, #90caf9, #0d47a1);
-      color: white;
-      font-size: 24px;
-      padding: 10px;
+      height: 300px; /* ✅ Taller than 100px container */
     }
   </style>
 </head>
@@ -45,7 +42,21 @@
   <div class="chubby-rectangle"></div>
 
   <div class="skinny-rectangle">
-    <div class="content">This is some long horizontal content that overflows and scrolls inside the skinny rectangle.</div>
+    <div class="content">
+      This is some tall content that will overflow vertically.<br>
+      Line 1<br>
+      Line 2<br>
+      Line 3<br>
+      Line 4<br>
+      Line 5<br>
+      Line 6<br>
+      Line 7<br>
+      Line 8<br>
+      Line 9<br>
+      Line 10<br>
+      Line 11<br>
+      Line 12<br>
+    </div>
   </div>
 </body>
 </html>
