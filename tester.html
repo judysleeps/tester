@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Centered Rectangles</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #f0f0f0;
+    }
+
+    .chubby-rectangle {
+      width: 400px;
+      height: 250px;
+      background-color: #4CAF50;
+      margin-bottom: 50px; /* spacing between rectangles */
+    }
+
+    .skinny-rectangle {
+      width: 800px;
+      height: 100px;
+      background-color: #2196F3;
+      overflow-x: auto; /* Enable horizontal scrolling */
+      overflow-y: hidden;
+      white-space: nowrap; /* Prevent content from wrapping */
+    }
+
+    .content {
+      display: inline-block;
+      width: 1600px; /* Wider than container to cause scroll */
+      height: 100%;
+      background: linear-gradient(to right, #90caf9, #0d47a1);
+      color: white;
+      font-size: 24px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="chubby-rectangle"></div>
+
+  <div class="skinny-rectangle">
+    <div class="content">This is some long horizontal content that overflows and scrolls inside the skinny rectangle.</div>
+  </div>
+</body>
+</html>
