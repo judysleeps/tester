@@ -35,6 +35,24 @@
 
     .content {
       height: 300px; /* ✅ Taller than 100px container */
+
+
+.skinny-rectangle::-webkit-scrollbar {
+  width: 8px;               /* Width of vertical scrollbar */
+}
+
+.skinny-rectangle::-webkit-scrollbar-track {
+  background: #1565C0;      /* Background of the scrollbar */
+}
+
+.skinny-rectangle::-webkit-scrollbar-thumb {
+  background-color: #90CAF9; /* Color of the scroll thumb */
+  border-radius: 4px;
+  border: 2px solid #1565C0; /* Optional: match track */
+}
+
+
+      
     }
   </style>
 </head>
@@ -58,5 +76,8 @@
       Line 12<br>
     </div>
   </div>
-</body>
+
+
+
+
 </html>
