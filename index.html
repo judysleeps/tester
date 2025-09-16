@@ -15,14 +15,6 @@
        background-image: url('https://i.imgur.com/xe4W9oV.jpeg');
     }
 
-    .chubby-rectangle {
-      width: 400px;
-      height: 250px;
-      background-color: #825C61;
-      margin-bottom: 130px; /* spacing between rectangles */
-       border: 8px solid #381D21;
-      border-radius: 15px;
-    }
 
     .skinny-rectangle {
       width: 800px;
@@ -59,15 +51,30 @@
   border: 2px solid #3D0F06; /* Optional: match track */
 }
 
+  .image-container {
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.1); /* Transparent white */
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      backdrop-filter: blur(4px); /* Optional frosted-glass effect */
+    }
 
+    .image-container img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
       
     }
   </style>
 </head>
 <body>
 
-  
-  <div class="chubby-rectangle"></div>
+   <div class="image-container">
+    <img src="https://i.imgur.com/UsdzJUS.png">
+  </div>
+
 
   <div class="skinny-rectangle">
     <div class="content">
