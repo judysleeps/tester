@@ -17,31 +17,20 @@
       position: relative;
     }
 
-    .skinny-rectangle {
-      width: 800px;
-      height: 150px;
-      border: 8px solid #381D21;
-      padding: 10px;
-      overflow-y: auto;
-      overflow-x: hidden;
-      background-color: #825C61;
-      z-index: 2;
-      position: relative;
-    }
-
-    .skinny-rectangle::-webkit-scrollbar {
-      width: 8px;
-    }
-
-    .skinny-rectangle::-webkit-scrollbar-track {
-      background: #825C61;
-    }
-
-    .skinny-rectangle::-webkit-scrollbar-thumb {
-      background-color: #381D21;
-      border-radius: 4px;
-      border: 2px solid #381D21;
-    }
+  .skinny-rectangle { width: 800px; 
+                     height: 150px;
+                     border: 8px solid #381D21; 
+                     padding: 10px; 
+                     overflow-y: auto; /* ✅ Enable vertical scrolling */ 
+                     overflow-x: hidden; background-color: #825C61; } 
+    .skinny-rectangle::-webkit-scrollbar { 
+      width: 8px; /* Width of vertical scrollbar */ } 
+    .skinny-rectangle::-webkit-scrollbar-track { 
+      background:#825C61 /* Background of the scrollbar */ } 
+    .skinny-rectangle::-webkit-scrollbar-thumb { 
+      background-color: #381D21; /* Color of the scroll thumb */
+                                                                                                                                                                                                                                                                                                                                                                                                                                         border-radius: 4px;
+                                                                                                                                                                                                                                                                                                                                                                                                                                         border: 2px solid #381D21; /* Optional: match track */ }
 
     /* ✅ Anchored image at the bottom */
     .image-container {
